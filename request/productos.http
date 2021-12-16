@@ -1,0 +1,33 @@
+//creamos una variable con @
+@api = http://localhost:3000/productos
+
+###obtener todos los productos
+GET {{api}}
+
+###ingresa un producto 
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombre" : "microfono",
+    "descripcion" : "microfono samsung l44"
+}
+
+###obtiene un producto por id
+GET {{api}}/1
+
+###elimina un producto por id
+DELETE {{api}}/6
+
+###obtenemos el total de procutos registados en la base de datos
+GET {{api}}/count
+
+###actualizamos un producto por id
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "nombre" : "heladera",
+    "descripcion" : "heladera gafa de 55 litros",
+    "cantidad": 5
+}

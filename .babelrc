@@ -1,0 +1,5 @@
+//configuracion nesesaria para que babel empiece a funcionar
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-transform-runtime"]
+}
